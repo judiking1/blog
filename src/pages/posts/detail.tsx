@@ -1,5 +1,13 @@
-export default function PostDetail() {
+import Footer from "components/Footer";
+import Header from "components/Header";
+import PostDetail from "components/PostDefail";
+
+export default function PostPage() {
   return (
-    <div>Post Detail Page</div>
+    <>
+      <Header/>
+      <PostDetail/>
+      <Footer/>
+    </>
   );
 }
