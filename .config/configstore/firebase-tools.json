@@ -1,0 +1,37 @@
+{
+	"motd": {
+		"cloudBuildErrorAfter": 1594252800000,
+		"cloudBuildWarnAfter": 1590019200000,
+		"defaultNode10After": 1594252800000,
+		"minVersion": "3.0.5",
+		"node8DeploysDisabledAfter": 1613390400000,
+		"node8RuntimeDisabledAfter": 1615809600000,
+		"node8WarnAfter": 1600128000000,
+		"fetched": 1701246443295
+	},
+	"usage": true,
+	"analytics-uuid": "ff22912c-31a3-4048-be96-a741c4d9904a",
+	"user": {
+		"iss": "accounts.google.com",
+		"azp": "563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com",
+		"aud": "563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com",
+		"sub": "107840252027843898792",
+		"email": "judiking1@gmail.com",
+		"email_verified": true,
+		"at_hash": "LafV01pZbL89Q1wsTPMWFw",
+		"iat": 1701246475,
+		"exp": 1701250075
+	},
+	"tokens": {
+		"expires_at": 1701250072908,
+		"access_token": "ya29.a0AfB_byCf3OAow3wp1ABUtXZX910gzDe8Lof5DAwuuum8r4zj6qRkYorhnuCkbtNB7oZoit8E3iVsnlXGdeuFS8oAAAqpffnZKbxRcnbORXf0U7jCl4j5RU9vLIWmlUm892lo50G0pZBq0YdCl8kg7sdCIwZm9A6GW3Q0xsrKEAaCgYKAbESARESFQHGX2MirsJkJXrow9h6SiMC6ZIlBA0177",
+		"expires_in": 3599,
+		"refresh_token": "1//0eMpaDoybm6qFCgYIARAAGA4SNwF-L9Irhq0__O_oHjxbJiXXljeS7FtyA8JVNvNc7nY3kXGxZc-rxG91ua3qOaf2T-5OUrKkivQ",
+		"scope": "https://www.googleapis.com/auth/cloud-platform openid https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/firebase",
+		"token_type": "Bearer",
+		"id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjBlNzJkYTFkZjUwMWNhNmY3NTZiZjEwM2ZkN2M3MjAyOTQ3NzI1MDYiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiNTYzNTg0MzM1ODY5LWZncmhnbWQ0N2JxbmVraWo1aThiNXByMDNobzg0OWU2LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiNTYzNTg0MzM1ODY5LWZncmhnbWQ0N2JxbmVraWo1aThiNXByMDNobzg0OWU2LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTA3ODQwMjUyMDI3ODQzODk4NzkyIiwiZW1haWwiOiJqdWRpa2luZzFAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJMYWZWMDFwWmJMODlRMXdzVFBNV0Z3IiwiaWF0IjoxNzAxMjQ2NDc1LCJleHAiOjE3MDEyNTAwNzV9.UTBmjxNK8Duuw-E4ZuGuAnS_0Lm2uuTpzHDPRoeJKTQJSdVqhj5j8WAkiMXhug2FhOrs3E18hFkpvkF2InJWpFILBtrNkPStFYbPgMaGJATlQKvgsDhQGjEy30OBmSaHM20uHKOYe8R3kvYfzzJfIT4yd2UWK00oIUpZab9Rul8w5vQVgLuLNWQFHPTcIHoHrFMAMGz4MbaFyBFA6ZE9VgJjBhFR9p8y-sEjkFGEyKPrk1GMrOIRolye6WXcr5ukP3GJYiqPrvakhzFGChunA_zZmcNPlrgAggux3bXBo4cBLvlcJA6GAblqd7gYTYHSyQGcVbgQ_054y2_EuN1Sxw"
+	},
+	"activeProjects": {
+		"C:\\Users\\kp25011": "blog-a7daa"
+	}
+}
