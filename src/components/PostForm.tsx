@@ -4,7 +4,8 @@ import { db } from "firebaseApp";
 import { useContext, useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { toast } from "react-toastify";
-import { PostProps } from "./PostList";
+import { CATEGORIES, CategoryType, PostProps } from "./PostList";
+
 
 export default function PostForm() {
   const params = useParams();
@@ -12,6 +13,7 @@ export default function PostForm() {
   const [title, setTitle] = useState<string>("");
   const [summary, setSummary] = useState<string>("");
   const [content, setContent] = useState<string>("");
+  const [category, setCategory] = useState<CategoryType>("Frontend");
   const { user } = useContext(AuthContext );
   const navigate = useNavigate();
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -48,7 +50,7 @@ export default function PostForm() {
           }),
           email: user?.email,
           uid: user?.uid,
-   
+          category: category,
         });
 
         toast?.success("게시글을 생성했습니다.");
@@ -60,7 +62,7 @@ export default function PostForm() {
     }
   };
   const onChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
   ) => {
     const {
       target: { name, value },
@@ -76,6 +78,9 @@ export default function PostForm() {
 
     if (name === "content") {
       setContent(value);
+    }
+    if (name === "category") {
+      setCategory(value as CategoryType);
     }
   };
   const getPost = async (id: string) => {
@@ -106,6 +111,22 @@ export default function PostForm() {
       <div className="form__block">
         <label htmlFor="title">제목</label>
         <input type="text" name="title" id="title" required onChange={onChange} value={title}/>
+      </div>
+      <div className="form__block">
+        <label htmlFor="category">제목</label>
+        <select
+          name="category"
+          id="category"
+          onChange={onChange}
+          defaultValue={category}
+        >
+          <option value="">카테고리를 선택해주세요</option>
+          {CATEGORIES?.map((category)=>(
+            <option value={category} key={category}>
+              {category}
+            </option>
+          ))}
+        </select>
       </div>
       <div className="form__block">
         <label htmlFor="summary">요약</label>
